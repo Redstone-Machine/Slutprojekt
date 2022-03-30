@@ -43,7 +43,7 @@ header {
 }
 .menu ul {
     display: flex;
-    column-gap: 3em;
+    column-gap: 5em;
     justify-content: center;
     align-items: center;
     color: rgba(238,238,238,255);
@@ -129,4 +129,16 @@ background-clip: text;
         align-self: stretch;
         font-size: 2rem;
     }
+}
+
+
+
+.rubrik {
+    text-align: center;
+    font-size: 8vw;
+    margin-top: 1.5rem;
+}
+.hem-text {
+    text-align: left;
+    margin-left: 10px;
 }
