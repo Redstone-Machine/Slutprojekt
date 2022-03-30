@@ -27,6 +27,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 header {
+    
     display: flex;
     flex-direction: row;
     background-color: rgb(51,51,51);
@@ -40,6 +41,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    margin-right: 3.2rem;
 }
 .menu ul {
     display: flex;
