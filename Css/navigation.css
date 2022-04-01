@@ -67,13 +67,6 @@ text-decoration: none;
     margin: 0 0.5rem;
     display: flex;
 }
-.menu ul a:hover,
-.menu ul a:focus-visible{
-background: linear-gradient(140deg, #ce3459, #094f97);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-}
 .hamburgare-knapp {
     font-family: "Material Icons";
     display: none;
@@ -85,13 +78,23 @@ background-clip: text;
 .hamburgare-knapp:focus:not(:focus-visible){
     outline: none;
 }
-.hamburgare-knapp:hover,
-.hamburgare-knapp:focus-visible{
-background: linear-gradient(140deg, #ce3459, #094f97);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
+@media (hover: hover) {
+    .menu ul a:hover,
+    .menu ul a:focus-visible{
+    background: linear-gradient(140deg, #ce3459, #094f97);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .hamburgare-knapp:hover,
+    .hamburgare-knapp:focus-visible{
+    background: linear-gradient(140deg, #ce3459, #094f97);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
 }
+
 @media screen and (max-width: 800px) {
     header {
     position: sticky; top: 0; width: 100%;
