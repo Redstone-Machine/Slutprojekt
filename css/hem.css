@@ -1,0 +1,34 @@
+.main-grid {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "head head"
+    "text pic";
+}
+.hem-text {
+    text-align: left;
+    margin-left: clamp(1rem,2vw,3rem);
+}
+.rubrik {
+    grid-area: head;
+}
+.text-container {
+    grid-area: text;
+}
+#Shortcut-phone {
+    grid-area: pic;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas:
+    "head"
+    "text"
+    "pic";
+    }
+}
