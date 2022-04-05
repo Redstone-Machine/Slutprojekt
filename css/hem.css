@@ -1,14 +1,16 @@
 .main-grid {
+    margin: clamp(1rem,2vw,3rem);;
     display: grid;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "head head"
     "text pic";
+    gap: 2rem;
 }
 .hem-text {
     text-align: left;
-    margin-left: clamp(1rem,2vw,3rem);
+    max-width: 1000px;
 }
 .rubrik {
     grid-area: head;
@@ -20,6 +22,8 @@
     grid-area: pic;
     max-width: 100%;
     margin: auto;
+    object-fit: contain;
+    height: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -30,5 +34,9 @@
     "head"
     "text"
     "pic";
+    padding-right: 0px;
+    }
+    #Shortcut-phone {
+        max-width: 50%;
     }
 }

@@ -100,6 +100,21 @@ text-decoration: none;
     }
 }
 
+.rubrik {
+    text-align: center;
+    font-size: clamp(3rem,10vw,7.5rem);
+    margin-top: 1.5rem;
+}
+.mini-rubrik {
+    font-size: 180%;
+    margin-bottom: 0.1rem;
+    margin-top: 1rem;
+}
+.text {
+    font-size: 130%;
+}
+
+
 @media screen and (max-width: 600px) {
     header {
     position: sticky; top: 0; width: 100%;
@@ -138,16 +153,11 @@ text-decoration: none;
         align-self: stretch;
         font-size: 2rem;
     }
-}
-.mini-rubrik {
-    font-size: 125%;
-    margin-bottom: 0.1rem;
-    margin-top: 1rem;
-}
-.text {
-}
-.rubrik {
-    text-align: center;
-    font-size: clamp(3rem,10vw,7.5rem);
-    margin-top: 1.5rem;
+    .mini-rubrik {
+        font-size: 135%;
+
+    }
+    .text {
+        font-size: 110%;
+    }
 }
