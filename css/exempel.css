@@ -1,0 +1,40 @@
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    margin: clamp(1rem,2vw,3rem);
+    margin-top: 0px;
+}
+
+.Slider-pictures {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: clamp(0px,5rem,3vw) 10vw 1fr 10vw clamp(0px,5rem,3vw);
+    grid-template-areas:
+    "no lfbn pic rhbn na";
+    margin-top: 1rem;
+}
+#left-button {
+    grid-area: lfbn;
+    transform: rotate(270deg);
+}
+#right-button {
+    grid-area: rhbn;
+    transform: rotate(90deg);
+}
+.ExempelSlide {
+    grid-area: pic;
+    size: 50%;
+}
+.slider-button {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    width: 70%;
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .main-grid {
+        margin-top: clamp(1rem,2vw,3rem);
+    }
+}

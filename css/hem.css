@@ -1,5 +1,6 @@
 .main-grid {
-    margin: clamp(1rem,2vw,3rem);;
+    margin: clamp(1rem,2vw,3rem);
+    margin-top: 0px;
     display: grid;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 2fr 1fr;
@@ -35,6 +36,7 @@
     "text"
     "pic";
     padding-right: 0px;
+    margin-top: clamp(1rem,2vw,3rem);
     }
     #Shortcut-phone {
         max-width: 50%;

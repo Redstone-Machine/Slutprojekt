@@ -19,6 +19,7 @@
       rel="stylesheet">
 
     <script src="script/script.js" defer> </script>
+    <script src="script/slider.js" defer> </script>
 </head>
 <body>
     <a class="Hidden-link" href="#Main-content">
@@ -40,7 +41,16 @@ menu
                 </ul>
         </nav>
     </header>
-    <main id="Main-content">
+    <main id="Main-content" class="main-grid">
+        <h1 class="rubrik">Exempel</h1>
+        <div class="Slider-pictures">
+            <img class="ExempelSlide" src="pictures/image-slider/image1.png" alt="img1" style="width: 100%;">
+            <img class="ExempelSlide" src="pictures/image-slider/image2.png" alt="img2" style="width: 100%;">
+            <img class="ExempelSlide" src="pictures/image-slider/image3.png" alt="img3" style="width: 100%;">
+            <img class="ExempelSlide" src="pictures/image-slider/image4.png" alt="img4" style="width: 100%;">
+            <button class="slider-button" id="left-button" onclick="changeImage(-1)"><img src="pictures/arrow.svg" alt="Vänster pil" width="100%"></button>
+            <button class="slider-button" id="right-button" onclick="changeImage(1)"><img src="pictures/arrow.svg" alt="Höger pil" width="100%"></button>
+        </div>
     
     </main>
 </body>
