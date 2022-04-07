@@ -20,15 +20,19 @@ function showDiv(n) {
 }
 document.getElementById("left-button").onclick = () => {
     document.getElementById("vtri").classList.add("vmindre")
+    document.getElementById("vcir").classList.add("vmindrecir")
     setTimeout(() => {
         changeImage(-1)
         document.getElementById("vtri").classList.remove("vmindre")
+        document.getElementById("vcir").classList.remove("vmindrecir")
     }, 150)
 }
 document.getElementById("right-button").onclick = () => {
-    document.getElementById("right-button").classList.add("hmindre")
+    document.getElementById("htri").classList.add("hmindre")
+    document.getElementById("hcir").classList.add("hmindrecir")
     setTimeout(() => {
         changeImage(1)
-        document.getElementById("right-button").classList.remove("hmindre")
+        document.getElementById("htri").classList.remove("hmindre")
+        document.getElementById("hcir").classList.remove("hmindrecir")
     }, 150)
 }

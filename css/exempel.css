@@ -32,8 +32,7 @@
     border: none;
     width: 70%;
     margin: auto;
-    transition: none 0.1s;
-    transition-property: width;
+
 }
 .button-div {
     position: relative;
@@ -46,10 +45,19 @@
         margin-top: clamp(1rem,2vw,3rem);
     }
 }
-
-#vtri {
-    width: 60%;
+img {
+    transition: none 0.1s ease-in;
+    transition-property: transform;
+}
+.vmindre {
+    transform: scale(80%);
+}
+.vmindrecir {
+    transform: scale(98%);
 }
 .hmindre {
-    width: 60%;
+    transform: scale(80%);
+}
+.hmindrecir {
+    transform: scale(98%);
 }
