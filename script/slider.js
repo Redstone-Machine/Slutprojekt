@@ -1,4 +1,9 @@
 "use strict";
+let Rubrikex = document.getElementById("rubrik-ex");
+let Rubriker = ["Din första rubrik", "Din andra rubrik", "Din fjärde jag menade tredje rubrik", "Den faktiskt fjärde rubrikisen"];
+let Underex = document.getElementById("under-ex");
+let Texter = ["Din första text", "Din andra textis", "Din andra jag menar tredje teeeexten", "Den faktiskt fjärde loremen"];
+
 var imageCounter = 1;
 showDiv(imageCounter);
 function changeImage(m) {
@@ -17,6 +22,8 @@ function showDiv(n) {
         imageArray[i].style.display = "none";
     }
     imageArray[imageCounter - 1].style.display = "block";
+    Rubrikex.innerText = Rubriker[imageCounter-1]
+    Underex.innerText = Texter[imageCounter-1]
 }
 document.getElementById("left-button").onclick = () => {
     document.getElementById("vtri").classList.add("vmindre")

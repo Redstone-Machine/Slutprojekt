@@ -1,0 +1,47 @@
+.main-grid {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% 15% 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+    "no grå pil1 text1 pic1 non"
+    "no grå pil2 text2 pic2 non"
+    "no grå pil3 text3 pic3 non"
+    "no grå pil4 text4 pic4 non";
+}
+.grå-rand {
+    grid-area: grå;
+    background-color: rgb(51,51,51);
+    width: 100%;
+    height: 100%;
+}
+.Arrowpoint {
+    width: clamp(8rem, 15vw, 13rem);
+}
+.all-text-historia {
+    margin-left: 2rem;
+}
+#Arrow1 {
+    grid-area: pil1;
+}
+#Arrow2 {
+    grid-area: pil2;
+}
+#Arrow3 {
+    grid-area: pil3;
+}
+#Arrow4 {
+    grid-area: pil4;
+}
+#text1 {
+    grid-area: text1;
+}
+#text2 {
+    grid-area: text2;
+}
+#text3 {
+    grid-area: text3;
+}
+#text4 {
+    grid-area: text4;
+}
