@@ -32,9 +32,24 @@
     border: none;
     width: 70%;
     margin: auto;
+    transition: none 0.1s;
+    transition-property: width;
+}
+.button-div {
+    position: relative;
+}
+.buttons-div {
+    position: absolute;
 }
 @media screen and (max-width: 600px) {
     .main-grid {
         margin-top: clamp(1rem,2vw,3rem);
     }
+}
+
+#vtri {
+    width: 60%;
+}
+.hmindre {
+    width: 60%;
 }

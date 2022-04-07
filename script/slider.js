@@ -18,3 +18,17 @@ function showDiv(n) {
     }
     imageArray[imageCounter - 1].style.display = "block";
 }
+document.getElementById("left-button").onclick = () => {
+    document.getElementById("vtri").classList.add("vmindre")
+    setTimeout(() => {
+        changeImage(-1)
+        document.getElementById("vtri").classList.remove("vmindre")
+    }, 150)
+}
+document.getElementById("right-button").onclick = () => {
+    document.getElementById("right-button").classList.add("hmindre")
+    setTimeout(() => {
+        changeImage(1)
+        document.getElementById("right-button").classList.remove("hmindre")
+    }, 150)
+}
