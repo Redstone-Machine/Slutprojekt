@@ -8,12 +8,12 @@
     max-width: 100%;
 }
 .Kontakt-dator-bild {
-    width: min(40rem, 60vw);
+    width: min(40rem, 45vw);
     height: auto;
 }
 .kontakt-text {
     text-align: left;
-    font-size: calc(0.9vw + 1rem);
+    font-size: min(0.9vw + 1rem, 2.7rem);
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
@@ -55,7 +55,6 @@
 }
 .Kontakt-dator-bild {
     display: none;
-
 }
 .Kontakt-telefon-bild {
     display: block;

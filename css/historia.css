@@ -1,13 +1,21 @@
 .main-grid {
     display: grid;
-    height: 1000px;
+    
     grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% 15% 1fr;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: 10rem min-content min-content min-content min-content;
     grid-template-areas:
+    "no grå rubrik rubrik rubrik rubrik"
     "no grå pil1 text1 pic1 non"
     "no grå pil2 text2 pic2 non"
     "no grå pil3 text3 pic3 non"
     "no grå pil4 text4 pic4 non";
+}
+.rubriken-historia {
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%)
+    
 }
 .grå-rand {
     grid-area: grå;
@@ -45,3 +53,14 @@
 #text4 {
     grid-area: text4;
 }
+/*@media screen and (max-width: 600px) {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% 15% 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+    "pil1 text1"
+    "no grå pil2 text2 pic2 non"
+    "no grå pil3 text3 pic3 non"
+    "no grå pil4 text4 pic4 non";
+}/*
