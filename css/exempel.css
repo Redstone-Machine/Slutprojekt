@@ -9,9 +9,11 @@
 .Slider-pictures {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: clamp(0px,5rem,3vw) 10vw 1fr 10vw clamp(0px,5rem,3vw);
+    grid-template-columns: 10vw 1fr 10vw;
+    /* margin-inline: clamp(0px,5rem,3vw); */
+    margin-inline: max(16vw - 8rem, 0px);
     grid-template-areas:
-    "no lfbn pic rhbn na";
+    "lfbn pic rhbn";
     margin-top: 1rem;
 }
 #left-button {
@@ -63,4 +65,7 @@ img {
 }
 .hmindrecir {
     transform: scale(98%);
+}
+@media screen and (max-width: 600px) {
+
 }
