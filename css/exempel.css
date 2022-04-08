@@ -11,7 +11,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 10vw 1fr 10vw;
     /* margin-inline: clamp(0px,5rem,3vw); */
-    margin-inline: max(16vw - 8rem, 0px);
+    margin-inline: max(20vw - 10rem, 0px);
     grid-template-areas:
     "lfbn pic rhbn";
     margin-top: 1rem;
@@ -27,7 +27,7 @@
 .ExempelSlide {
     grid-area: pic;
     size: 50%;
-    border-radius: 4rem;
+    border-radius: 3.5rem;
 }
 .slider-button {
     background-color: transparent;
@@ -35,6 +35,10 @@
     border: none;
     width: 70%;
     margin: auto;
+}
+.slider-button img {
+    width: 100%;
+    height: auto;
 }
 .exempel-text {
 text-align: center;
@@ -67,5 +71,28 @@ img {
     transform: scale(98%);
 }
 @media screen and (max-width: 600px) {
-
+    .ExempelSlide {
+        border-radius: 0px;
+    }
+    .Slider-pictures {
+        display: block;
+        position: relative;
+        margin-inline: 0px;
+    }
+    .slider-button {
+        position: absolute;
+        width: calc(1.5rem + 10vw);
+        top: 50%;
+    }
+    #left-button {
+        transform: translateY(-50%) rotate(270deg);
+        left: 0.5rem;
+    }
+    #right-button {
+        transform: translateY(-50%) rotate(90deg);
+        right: 0.5rem;
+    }
+    .main-grid {
+        margin-inline: 0px;
+    }
 }
