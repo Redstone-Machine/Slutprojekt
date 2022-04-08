@@ -1,0 +1,53 @@
+.main-grid {
+    margin-inline: max(10vw - 3rem, 0px);
+}
+.Kontakt-telefon-bild {
+    display: none;
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+}
+.Kontakt-dator-bild {
+    width: min(40rem, 60vw);
+    height: auto;
+}
+.kontakt-text {
+    text-align: left;
+    font-size: calc(0.9vw + 1rem);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+@media (hover: hover) {
+.Apple-kontakt img {
+    box-shadow: 0;
+    transition: box-shadow .3s;
+}
+.Apple-kontakt img:hover {
+    box-shadow: 0 0 30px rgba(33,33,33,0.5); 
+}
+.Reddit-kontakt img {
+    box-shadow: 0;
+    transition: box-shadow .3s;
+}
+.Reddit-kontakt img:hover {
+    box-shadow: 0 0 30px rgba(33,33,33,0.5); 
+}
+}
+
+@media screen and (max-width: 600px) {
+.main-grid {
+    margin-inline: 0rem;
+}
+.Kontakt-dator-bild {
+    display: none;
+
+}
+.Kontakt-telefon-bild {
+    display: block;
+}
+.kontakt-text {
+    text-align: center;
+    font-size: 1.7rem;
+}
+}
