@@ -1,8 +1,7 @@
 .main-grid {
     display: grid;
-    
     grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% 15% 1fr;
-    grid-template-rows: 10rem min-content min-content min-content min-content;
+    grid-template-rows: calc(3rem + clamp(3rem,10vw,7.5rem)) min-content min-content min-content min-content;
     grid-template-areas:
     "no grå rubrik rubrik rubrik rubrik"
     "no grå pil1 text1 pic1 non"
@@ -15,7 +14,7 @@
     top: 44px;
     left: 50%;
     transform: translateX(-50%)
-    
+
 }
 .grå-rand {
     grid-area: grå;
@@ -53,14 +52,33 @@
 #text4 {
     grid-area: text4;
 }
-/*@media screen and (max-width: 600px) {
-    display: grid;
+@media screen and (max-width: 600px) {
+    .rubriken-historia {
+        top: 0px;
+        grid-area: rubrik;
+        position: relative;
+    }
+    .main-grid {
     height: 1000px;
-    grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% 15% 1fr;
-    grid-template-rows: min-content min-content;
+    grid-template-columns: 50% 50%;
+    margin-top: clamp(1rem,2vw,3rem);
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content;
     grid-template-areas:
-    "pil1 text1"
-    "no grå pil2 text2 pic2 non"
-    "no grå pil3 text3 pic3 non"
-    "no grå pil4 text4 pic4 non";
-}/*
+    "rubrik rubrik"
+    "text1 text1"
+    "pil1 pic1"
+    "text2 text2"
+    "pil2 pic2"
+    "text3 text3"
+    "pil3 pic3"
+    "text4 text4"
+    "pil4 pic4";
+}
+.all-text-historia {
+    margin-inline: 1rem;
+}
+    .Arrowpoint {
+        transform: rotate(90deg);
+        justify-self: center;
+    }
+}
