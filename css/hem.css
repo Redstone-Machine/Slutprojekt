@@ -2,11 +2,15 @@
     margin: clamp(1rem,2vw,3rem);
     margin-top: 0px;
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "head head"
-    "text pic";
+    "text pic"
+    "ins1 ins2"
+    "ins3 ins4"
+    "ins5 ins6"
+    ;
     gap: 2rem;
 }
 .hem-text {
@@ -26,17 +30,36 @@
     object-fit: contain;
     height: auto;
 }
-
+.instruktion1 {
+    grid-area: ins1;
+}
+.instruktion2 {
+    grid-area: ins2;
+}
+.instruktion3 {
+    grid-area: ins3;
+}
+.instruktion4 {
+    grid-area: ins4;
+}
+.instruktion5 {
+    grid-area: ins5;
+}
+.instruktion6 {
+    grid-area: ins6;
+}
 @media screen and (max-width: 600px) {
     .main-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 100%; 
+    grid-template-rows: min-content min-content min-content;
+    padding-right: 0px;
+    margin-top: clamp(1rem,2vw,3rem);
         grid-template-areas:
     "head"
     "text"
-    "pic";
-    padding-right: 0px;
-    margin-top: clamp(1rem,2vw,3rem);
+    "pic"
+    "ins1"
+    ;
     }
     #Shortcut-phone {
         max-width: 50%;
