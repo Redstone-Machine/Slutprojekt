@@ -27,9 +27,11 @@
 .ExempelSlide {
     width: 100%;
     height: auto;
-    grid-area: pic;
     size: 50%;
     border-radius: 3.5rem;
+}
+.ExempelSlide-position {
+    grid-area: pic;
 }
 .slider-button {
     background-color: transparent;
