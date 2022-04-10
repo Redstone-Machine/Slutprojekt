@@ -1,6 +1,6 @@
 "use strict";
 let Rubrikex = document.getElementById("rubrik-ex");
-let Rubriker = ["Amanda - Din virtuella assistent", "Din andra uppdaterade rubrik", "Din fjärde jag menade tredje rubrik", "Den faktiskt fjärde rubrikisen"];
+let Rubriker = ["Amanda - Din virtuella assistent", "Fyller någon år idag?", "Dina gympass - Sparade", "Gratta dina kontakter - På deras namnsdag"];
 let Underex = document.getElementById("under-ex");
 let Texter = ["Uppdaterad Din första text", "Din andra textis", "Din andra jag menar tredje teeeexten", "Den faktiskt fjärde loremen"];
 

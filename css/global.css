@@ -8,7 +8,7 @@
 * { margin: 0; padding: 0; }
 
 :focus-visible {
-    outline: 2px solid hsl(113, 100%, 80%);
+    outline: 5px solid hsl(113, 66%, 55%);
     border-radius: 5px;
 }
 .Hidden-link {
@@ -105,6 +105,15 @@ text-decoration: none;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    }
+    .menu ul a:focus-visible {
+    outline: 2px solid hsl(113, 100%, 80%);
+    }
+    .hamburgare-knapp:focus-visible {
+    outline: 2px solid hsl(113, 100%, 80%);
+    }
+    .shortcut_logo:focus-visible{
+    outline: 2px solid hsl(113, 100%, 80%);
     }
 }
 
