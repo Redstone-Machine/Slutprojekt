@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/MaterialIcons-Regular.woff2') format('woff2');
+}
+
 * { margin: 0; padding: 0; }
+
 :focus-visible {
     outline: 2px solid hsl(113, 100%, 80%);
     border-radius: 5px;

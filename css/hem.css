@@ -30,7 +30,6 @@
 .Shortcut-phone {
     grid-area: pic;
     max-width: 100%;
-    margin: auto;
     object-fit: contain;
     height: auto;
     align-self: start;
@@ -79,6 +78,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .Shortcut-phone {
+        justify-self: center;
+    }
     .main-grid {
         grid-template-columns: 100%;
         grid-template-rows: min-content min-content min-content;
@@ -96,11 +98,10 @@
             "ins6";
     }
 
-    #Shortcut-phone {
+    .Shortcut-phone {
         max-width: 50%;
     }
     .instruktion2, .instruktion4, .instruktion6 {
-        margin-left: 50%;
-        transform: translateX(-50%);
+        justify-self: center;
     }
 }

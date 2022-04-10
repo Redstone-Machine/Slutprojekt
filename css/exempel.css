@@ -25,6 +25,8 @@
     transform: rotate(90deg);
 }
 .ExempelSlide {
+    width: 100%;
+    height: auto;
     grid-area: pic;
     size: 50%;
     border-radius: 3.5rem;
@@ -48,6 +50,21 @@ text-align: center;
 }
 .buttons-div {
     position: absolute;
+}
+@media (hover: hover) {
+    .buttons-div:hover {
+    transform: scale(103%);
+    transition: none 0.1s ease-in;
+    transition-property: transform;
+    }
+    
+    .ExempelSlide {
+        box-shadow: 0;
+        transition: box-shadow .3s;
+    }
+    .ExempelSlide:hover {
+        box-shadow: 0 0 30px rgba(33,33,33,0.5); 
+}
 }
 @media screen and (max-width: 600px) {
     .main-grid {
