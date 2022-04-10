@@ -1,67 +1,106 @@
 .main-grid {
-    margin: clamp(1rem,2vw,3rem);
+    margin: clamp(1rem, 2vw, 3rem);
     margin-top: 0px;
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "head head"
-    "text pic"
-    "ins1 ins2"
-    "ins3 ins4"
-    "ins5 ins6"
+        "head head head"
+        "text text pic"
+        "ins1 ins2 no"
+        "ins3 ins4 no"
+        "ins5 ins6 no"
     ;
     gap: 2rem;
 }
+
 .hem-text {
     text-align: left;
     max-width: 1000px;
 }
+
 .rubrik {
     grid-area: head;
 }
-.text-container {
+
+.Text-container {
     grid-area: text;
 }
-#Shortcut-phone {
+
+.Shortcut-phone {
     grid-area: pic;
     max-width: 100%;
     margin: auto;
     object-fit: contain;
     height: auto;
+    align-self: start;
 }
+
 .instruktion1 {
     grid-area: ins1;
 }
+
 .instruktion2 {
     grid-area: ins2;
 }
+
 .instruktion3 {
     grid-area: ins3;
 }
+
 .instruktion4 {
     grid-area: ins4;
 }
+
 .instruktion5 {
     grid-area: ins5;
 }
+
 .instruktion6 {
     grid-area: ins6;
 }
-@media screen and (max-width: 600px) {
+.instruktion2, .instruktion4, .instruktion6 {
+    margin-left: 3rem;
+    width: 20rem;
+    height: auto;
+}
+@media screen and (max-width: 950px) {
     .main-grid {
-    grid-template-columns: 100%; 
-    grid-template-rows: min-content min-content min-content;
-    padding-right: 0px;
-    margin-top: clamp(1rem,2vw,3rem);
         grid-template-areas:
-    "head"
-    "text"
-    "pic"
-    "ins1"
+        "head head head"
+        "text text pic"
+        "ins1 ins1 ins2"
+        "ins3 ins3 ins4"
+        "ins5 ins5 ins6"
     ;
     }
+    .instruktion2, .instruktion4, .instruktion6 {
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content min-content;
+        padding-right: 0px;
+        margin-top: clamp(1rem, 2vw, 3rem);
+        grid-template-areas:
+            "head"
+            "text"
+            "pic"
+            "ins1"
+            "ins2"
+            "ins3"
+            "ins4"
+            "ins5"
+            "ins6";
+    }
+
     #Shortcut-phone {
         max-width: 50%;
+    }
+    .instruktion2, .instruktion4, .instruktion6 {
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }

@@ -24,6 +24,7 @@
 }
 .Arrowpoint {
     width: clamp(8rem, 15vw, 13rem);
+    height: auto;
 }
 .all-text-historia {
     margin-left: 2rem;
@@ -74,11 +75,16 @@
     "text4 text4"
     "pil4 pic4";
 }
+.Arrowpoint {
+    width: min(30vw, 8rem);
+    height: min(30vw, 8rem);
+    margin-top: 1.5rem;
+}
 .all-text-historia {
     margin-inline: 1rem;
 }
-    .Arrowpoint {
-        transform: rotate(90deg);
-        justify-self: center;
-    }
+.Arrowpoint {
+    transform: rotate(90deg);
+    justify-self: center;
+}
 }
