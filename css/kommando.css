@@ -1,7 +1,41 @@
+.back-button {
+  position: absolute;
+  top: 7rem;
+  left: 8vw;
+  font-size: 2.5rem;
+  width: max-content;
+  display: flex;
+}
+.back-text {
+  display: inline;
+  color: rgb(83, 83, 83);
+  align-items: center;
+}
+.back-symbol {
+  display: inline;
+  font-family: "Material Icons";
+  font-size: 3rem;
+  margin-right: 0.3rem;
+  color: rgb(83, 83, 83);
+  align-items: center;
+}
+.rubrik-kommando {
+  font-size: clamp(2rem,5vw,4rem);
+}
+@media (hover: hover) {
+  .back-button:hover,
+  .back-button:focus-visible{
+  background: linear-gradient(140deg, #ce3459, #094f97);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+}
 .classactionlawsuit {
     padding: 10px;
     border: 3px solid rgb(212, 110, 47);  
   }
   #Bingo {
     border: 3px solid rgb(237, 127, 59);
+    margin: 100px;
   }

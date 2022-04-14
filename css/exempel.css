@@ -5,7 +5,9 @@
     margin: clamp(1rem,2vw,3rem);
     margin-top: 0px;
 }
-
+.remove-picture {
+    display: none;
+}
 .Slider-pictures {
     display: grid;
     grid-template-rows: 1fr;

@@ -11,7 +11,7 @@ function changeImage(m) {
 }
 function showDiv(n) {
     var i;
-    var imageArray = document.getElementsByClassName("ExempelSlide");
+    var imageArray = document.getElementsByClassName("ExempelSlide-position");
     if (n > imageArray.length) {
         imageCounter = 1;
     }
@@ -19,9 +19,9 @@ function showDiv(n) {
         imageCounter = imageArray.length;
     }
     for (i = 0; i < imageArray.length; i++) {
-        imageArray[i].style.display = "none";
+        imageArray[i].classList.add("remove-picture");
     }
-    imageArray[imageCounter - 1].style.display = "block";
+    imageArray[imageCounter - 1].classList.remove("remove-picture");
     Rubrikex.innerText = Rubriker[imageCounter-1]
     Underex.innerText = Texter[imageCounter-1]
 }
