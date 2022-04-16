@@ -1,41 +1,150 @@
+.grid-rubrik {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 17vw 1fr 17vw;
+  grid-template-areas:
+      "tillbaka rubrik no";
+  position: relative;
+  margin-top: 1.5rem; 
+}
 .back-button {
+  grid-area: tillbaka;
   position: absolute;
-  top: 7rem;
-  left: 8vw;
-  font-size: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   width: max-content;
+  margin-left: max(15vw - 13.5rem, 0px);
+}
+.back-button a{
+  font-size: min(3vw, 2.5rem);
   display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 .back-text {
   display: inline;
   color: rgb(83, 83, 83);
-  align-items: center;
 }
 .back-symbol {
   display: inline;
   font-family: "Material Icons";
-  font-size: 3rem;
+  font-size: min(3vw * 1.2, 3rem);
   margin-right: 0.3rem;
   color: rgb(83, 83, 83);
-  align-items: center;
 }
 .rubrik-kommando {
   font-size: clamp(2rem,5vw,4rem);
+  grid-area: rubrik;
+  text-align: center;
+  margin-top: 0px;
+}
+.ladda-ner-text {
+  font-size: min(5vw, 3.5rem);
+  text-align: center;
+  display: block;
+  color: hsl(221, 100%, 34%);
+  margin-top: 0.4rem;
+}
+.ladda-ner-text a{
+  text-decoration: none;
+  color: hsl(221, 100%, 34%);
+}
+.beskrivning {
+  text-align: center;
+  display: grid;
+  color: hsl(0, 0%, 22%);
+  text-decoration: none;
+  font-size: min(3.6vw, 2.4rem);
+  margin-top: 0.5rem;
 }
 @media (hover: hover) {
   .back-button:hover,
-  .back-button:focus-visible{
+  .back-button a:focus-visible{
   background: linear-gradient(140deg, #ce3459, #094f97);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 }
-.classactionlawsuit {
-    padding: 10px;
-    border: 3px solid rgb(212, 110, 47);  
+.ladda-ner-text a:hover,
+  .ladda-ner-text a:focus-visible{
+  background: linear-gradient(140deg, #ff4b75, #3999f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tabell-text {
+  padding: 1.5rem;
+  padding-inline: 2rem;
+  border: 4px solid rgb(0, 0, 0);
+  font-size: 1.7rem;
+}
+#tabell {
+  border: 4px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+}
+.kommando-bild {
+  margin-top: 1.5rem;
+  width: calc(57vw + 8rem);
+  height: auto;
+  margin-inline: auto;
+  display: block;
+}
+.tabell-ja {
+  color: hsl(127, 100%, 36%);
+}
+.tabell-nej {
+  color: hsl(0, 100%, 36%);
+}
+@media screen and (max-width: 600px) {
+  .grid-rubrik {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "rubrik"
+        "tillbaka";
+    position: relative;
+    margin-top: 1.5rem; 
   }
-  #Bingo {
-    border: 3px solid rgb(237, 127, 59);
-    margin: 100px;
+  .back-button {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0px;
+    margin-top: 0.5rem;
   }
+  .back-button a{
+    font-size: 1.7rem;
+  }
+  .back-symbol {
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .back-text {
+    margin: auto;
+  }
+  .kommando-bild {
+    width: 100vw;
+    height: auto;
+    margin-top: 3rem;
+  }
+  #tabell {
+    margin-top: 3rem;
+  }
+  .ladda-ner-text {
+  font-size: 3rem;
+  }
+  .beskrivning {
+  font-size: 2rem;
+  }
+  .tabell-text {
+    padding: 1.5rem;
+    padding-inline: min(3vw,2rem);
+    border: 5px solid rgb(0, 0, 0);
+    font-size: min(7vw, 1.7rem);
+  }
+}

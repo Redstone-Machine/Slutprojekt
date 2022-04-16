@@ -2,7 +2,7 @@
 let Rubrikex = document.getElementById("rubrik-ex");
 let Rubriker = ["Amanda - Din virtuella assistent", "Fyller någon år idag?", "Dina gympass - Sparade", "Gratta dina kontakter - På deras namnsdag"];
 let Underex = document.getElementById("under-ex");
-let Texter = ["Uppdaterad Din första text", "Din andra textis", "Din andra jag menar tredje teeeexten", "Den faktiskt fjärde loremen"];
+let Texter = ["Amanda är en Virtuell Assistent programmerad i genvängar, som är anpassningsbar, kan svara på många frågor och hjälpa dig i vardagen. Du kan också ladda ner extensions och skapa moln extensions till henne. Det är en komplett assistent som sparar inställningar och generella val i filer appen.", "Din andra textis", "Din andra jag menar tredje teeeexten", "Den faktiskt fjärde loremen"];
 
 var imageCounter = 1;
 showDiv(imageCounter);
