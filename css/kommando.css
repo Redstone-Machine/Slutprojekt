@@ -139,12 +139,12 @@
   font-size: 3rem;
   }
   .beskrivning {
-  font-size: 2rem;
+  font-size: 1.6rem;
   }
   .tabell-text {
     padding: 1.5rem;
-    padding-inline: min(3vw,2rem);
+    padding-inline: min(8vw - 0.5rem,2.7rem);
     border: 5px solid rgb(0, 0, 0);
-    font-size: min(7vw, 1.7rem);
+    font-size: min(7vw, 1.3rem);
   }
 }
