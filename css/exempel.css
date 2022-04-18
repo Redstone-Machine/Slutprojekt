@@ -56,13 +56,13 @@ text-align: center;
 }
 @media (hover: hover) {
     .buttons-div:hover {
-    transform: scale(103%);
+    transform: scale(1.03);
     transition: none 0.1s ease-in;
     transition-property: transform;
     }
     
     .ExempelSlide {
-        box-shadow: 0;
+        box-shadow: none;
         transition: box-shadow .3s;
     }
     .ExempelSlide:hover {
@@ -79,16 +79,16 @@ img {
     transition-property: transform;
 }
 .vmindre {
-    transform: scale(80%);
+    transform: scale(0.8);
 }
 .vmindrecir {
-    transform: scale(98%);
+    transform: scale(0.98);
 }
 .hmindre {
-    transform: scale(80%);
+    transform: scale(0.8);
 }
 .hmindrecir {
-    transform: scale(98%);
+    transform: scale(0.98);
 }
 @media screen and (max-width: 600px) {
     .ExempelSlide {

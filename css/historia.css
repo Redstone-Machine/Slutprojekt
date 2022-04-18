@@ -89,8 +89,8 @@
     grid-area: pic5;
 }
 #apple-logo {
-    height: 85%;
     width: 85%;
+    height: auto;
     margin: auto;
     display: block;
     
@@ -131,7 +131,9 @@
     "text3 text3"
     "pil3 pic3"
     "text4 text4"
-    "pil4 pic4";
+    "pil4 pic4"
+    "text5 text5"
+    "pil5 pic5";
 }
 .Arrowpoint {
     width: min(30vw, 8rem);
