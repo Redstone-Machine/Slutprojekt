@@ -34,6 +34,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: hsl(0, 0%, 98%);
+    height: fit-content;
 }
 @media (prefers-color-scheme: dark) {
     body {

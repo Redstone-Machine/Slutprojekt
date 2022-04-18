@@ -118,7 +118,7 @@
         position: relative;
     }
     .main-grid {
-    height: 1000px;
+    
     grid-template-columns: 50% 50%;
     margin-top: clamp(1rem,2vw,3rem);
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content;
