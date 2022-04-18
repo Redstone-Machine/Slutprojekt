@@ -60,7 +60,6 @@ text-align: center;
     transition: none 0.1s ease-in;
     transition-property: transform;
     }
-    
     .ExempelSlide {
         box-shadow: none;
         transition: box-shadow .3s;

@@ -38,10 +38,12 @@
     width: calc(100% - 0rem);
     height: auto;
     border-radius: 2.7vw;
+    max-width: 19rem;
 }
 .history-description {
     position: relative;
     color: hsl(0, 0%, 41%);
+    margin-top: 5px;
 }
 #Arrow1 {
     grid-area: pil1;
@@ -93,7 +95,20 @@
     height: auto;
     margin: auto;
     display: block;
-    
+}
+@media (hover: hover) {
+    .history-picture {
+    transition: -webkit-filter .3s;
+    }
+    .history-picture:hover {
+        -webkit-filter: drop-shadow(0px 0px 10px #222);
+        filter:         drop-shadow(0px 0px 10px #222);
+    }
+}
+@media screen and (min-width: 2700px) {
+    #apple-logo {
+    margin-left: 0px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .main-grid {
@@ -110,6 +125,22 @@
     "no grå pil5 text5 ne non"
     "no grå na pic5 ne non";
     }
+    .history-pic-description {
+        padding-inline: max(5rem, 8rem - 20%);
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .history-picture {
+        margin: auto;
+        display: block;
+    }
+    .history-description {
+        position: relative;
+        color: hsl(0, 0%, 41%);
+        margin-top: 5px;
+}
 }
 @media screen and (max-width: 600px) {
     .rubriken-historia {
@@ -118,7 +149,6 @@
         position: relative;
     }
     .main-grid {
-    
     grid-template-columns: 50% 50%;
     margin-top: clamp(1rem,2vw,3rem);
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content min-content;
@@ -133,18 +163,41 @@
     "text4 text4"
     "pil4 pic4"
     "text5 text5"
-    "pil5 pic5";
-}
-.Arrowpoint {
-    width: min(30vw, 8rem);
-    height: min(30vw, 8rem);
-    margin-top: 1.5rem;
-}
-.all-text-historia {
-    margin-inline: 1rem;
-}
-.Arrowpoint {
+    "pic5 pic5";
+    }
+    #Arrow5 {
+    display: none;
+    }
+    .Arrowpoint {
+    width: min(35vw, 10rem);
+    height: min(30vw, 10rem);
+    margin-top: 2rem;
     transform: rotate(90deg);
     justify-self: center;
-}
+    }
+    .all-text-historia {
+    margin-inline: 1rem;
+    }
+    .history-pic-description {
+    padding-inline: 0px;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    }
+    .history-picture {
+    margin-left: 14.5%;
+    margin-right: 25.5%;
+    width: 60%;
+    }
+    #apple-logo {
+    margin-left: 20%;
+    margin-right: 30%;
+    width: 50%;
+    }
+    #picture5 {
+    padding: 20%;
+    padding-top: 0px;
+    }
+    #picture5 img{
+    margin: auto;
+    }
 }
