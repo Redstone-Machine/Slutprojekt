@@ -1,13 +1,14 @@
 .main-grid {
     display: grid;
-    grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% 15% 1fr;
-    grid-template-rows: calc(3rem + clamp(3rem,10vw,7.5rem)) min-content min-content min-content min-content;
+    grid-template-columns: 10% clamp(1rem, 2.2%, 1.6rem) clamp(8rem, 15vw, 13rem) 50% min(7rem + 12%, 100vw - 10% - clamp(1rem, 2.2%, 1.6rem) - clamp(8rem, 15vw, 13rem) - 50%) 1fr;
+    grid-template-rows: calc(3rem + clamp(3rem,10vw,7.5rem)) min-content min-content min-content min-content min-content min-content min-content min-content min-content;
     grid-template-areas:
     "no grå rubrik rubrik rubrik rubrik"
     "no grå pil1 text1 pic1 non"
     "no grå pil2 text2 pic2 non"
     "no grå pil3 text3 pic3 non"
-    "no grå pil4 text4 pic4 non";
+    "no grå pil4 text4 pic4 non"
+    "no grå pil5 text5 pic5 non";
 }
 .rubriken-historia {
     position: absolute;
@@ -29,6 +30,19 @@
 .all-text-historia {
     margin-left: 2rem;
 }
+.history-pic-description {
+    padding: min(2.7rem, 4vw);
+    padding-top: 0px;
+}
+.history-picture {
+    width: calc(100% - 0rem);
+    height: auto;
+    border-radius: 2.7vw;
+}
+.history-description {
+    position: relative;
+    color: hsl(0, 0%, 41%);
+}
 #Arrow1 {
     grid-area: pil1;
 }
@@ -41,6 +55,9 @@
 #Arrow4 {
     grid-area: pil4;
 }
+#Arrow5 {
+    grid-area: pil5;
+}
 #text1 {
     grid-area: text1;
 }
@@ -52,6 +69,47 @@
 }
 #text4 {
     grid-area: text4;
+}
+#text5 {
+    grid-area: text5;
+}
+#picture1 {
+    grid-area: pic1;
+}
+#picture2 {
+    grid-area: pic2;
+}
+#picture3 {
+    grid-area: pic3;
+}
+#picture4 {
+    grid-area: pic4;
+}
+#picture5 {
+    grid-area: pic5;
+}
+#apple-logo {
+    height: 85%;
+    width: 85%;
+    margin: auto;
+    display: block;
+    
+}
+@media screen and (max-width: 1200px) {
+    .main-grid {
+    grid-template-areas:
+    "no grå rubrik rubrik rubrik rubrik"
+    "no grå pil1 text1 ne non"
+    "no grå na1 pic1 ne non"
+    "no grå pil2 text2 ne non"
+    "no grå na2 pic2 ne non"
+    "no grå pil3 text3 ne non"
+    "no grå na3 pic3 ne non"
+    "no grå pil4 text4 ne non"
+    "no grå na4 pic4 ne non"
+    "no grå pil5 text5 ne non"
+    "no grå na pic5 ne non";
+    }
 }
 @media screen and (max-width: 600px) {
     .rubriken-historia {
