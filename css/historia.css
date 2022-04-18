@@ -34,6 +34,10 @@
     padding: min(2.7rem, 4vw);
     padding-top: 0px;
 }
+.history-pic-description a {
+    display: flex;
+    justify-content: center;
+}
 .history-picture {
     width: calc(100% - 0rem);
     height: auto;
@@ -93,8 +97,8 @@
 #apple-logo {
     width: 85%;
     height: auto;
-    margin: auto;
-    display: block;
+    /* margin: auto;
+    display: block; */
 }
 @media (hover: hover) {
     .history-picture {
@@ -201,3 +205,6 @@
     margin: auto;
     }
 }
+/* .focus-picture:focus-visible img {
+    outline: 5px solid hsl(113, 66%, 55%);
+} */
