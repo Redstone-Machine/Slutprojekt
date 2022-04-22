@@ -114,4 +114,7 @@ img {
     .main-grid {
         margin-inline: 0px;
     }
+    #under-ex {
+        margin-inline: 1.8rem;
+    }
 }
